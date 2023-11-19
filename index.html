@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lazarov</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lazarov</title>
+	<link rel="stylesheet" href="assets/styles/reset.css">
+	<link rel="stylesheet" href="assets/styles/base.css">
+	<link rel="stylesheet" href="assets/styles/header.css">
+	<link rel="stylesheet" href="assets/styles/main-section.css">
+	<link rel="stylesheet" href="assets/styles/about-section.css">
+	<link rel="stylesheet" href="assets/styles/facts-section.css">
 </head>
 <body>
-  <header></header>
+	<div class="container">
+		<header class="header">
+			<img src="./assets/imgs/logo.svg" alt="logo">
+			<nav class="header__nav">
+				<a href="#about" class="header__nav-link">О нас</a>
+				<a href="#facts" class="header__nav-link">Ключевые факты</a>
+				<a href="#" class="header__nav-link">Тарифы</a>
+				<a href="#" class="header__nav-link">Контакты</a>
+				<img
+					src="./assets/imgs/burger.svg"
+					alt="burger"
+					class="header__nav-link--burger open"
+					onclick="header.togggleBurger()"
+				>
+				<img
+					src="./assets/imgs/close-burger.svg"
+					alt="burger"
+					class="header__nav-link--burger close hide"
+					onclick="header.togggleBurger()"
+				>
+			</nav>
+		</header>
+		<div class="header__burger">
+			<nav class="header__burger-nav">
+				<a href="#about" class="header__nav-link" onclick="header.togggleBurger()">О нас</a>
+				<a href="#facts" class="header__nav-link" onclick="header.togggleBurger()">Ключевые факты</a>
+				<a href="#" class="header__nav-link" onclick="header.togggleBurger()">Тарифы</a>
+				<a href="#" class="header__nav-link" onclick="header.togggleBurger()">Контакты</a>
+			</nav>
+		</div>
+	</div>
+	<main class="content">
+		<section class="main container">
+			<h1 aria-hidden="true">Такси в грузию</h1>
+			<div class="main__title-wr">
+				<div class="main__title-top">
+					<p class="main__title">
+						ПУТЕШЕСТВУЙТЕ В
+					</p>
+					<img src="./assets/imgs/georgia.svg" alt="">
+				</div>
+				<p class="main__title">
+					ОТКРОЙТЕ МИР ГОСТЕПРИИМСТВА
+				</p>
+				<div class="main__title-bottom">
+					<p class="main__title">
+						И КРАСОТЫ
+					</p>
+				</div>
+			</div>
+			<img src="./assets/imgs/main-img.png" class="main__img" alt="main-img">
+			<a href="https://wa.me/79627485550" target="_blank">
+				<button class="button">Заказать такси</button>
+			</a>
+		</section>
+		<section class="about container" id="about">
+			<h2 class="g-subtitle">о нас</h2>
+			<div class="about__content">
+				<h3 class="about__content-title">
+					Мы гарантируем помощь при прохождении грузинской границы для вашего комфорта и безопасности.
+				</h3>
+				<div class="about__content-info-wr">
+					<p class="about__content-info-text">
+						Отправляйтесь в незабываемые круглосуточные поездки в Тбилиси из Владикавказа и Беслана. Мы предлагаем комфортабельный транспорт и гибкое расписание, чтобы ваше путешествие было комфортным и приятным.
+					</p>
+					<p class="about__content-info-text">
+						Мы - компания, специализирующаяся на организации первозок людей в Грузию, и мы гордимся тем, что предлагаем услуги круглосуточно. Наша цель - обеспечить удобство и доступность для наших клиентов в любое время, чтобы они могли осуществить свои планы по поездке в Грузию без ограничений.	
+					</p>
+				</div>
+				<img src="./assets/imgs/about-img.png" class="about__content-img" alt="about-img">
+			</div>
+		</section>
+		<section class="facts container" id="facts">
+			<h2 class="g-subtitle">Ключевые факты</h2>
+			<div class="facts-wr">
+				<div class="facts__item">
+					<div class="facts__item-line"></div>
+					<div class="facts__item-content">
+						<p class="facts__item-content-nubmer">35,000</p>
+						<p class="facts__item-content-text">Довольных клиентов</p>
+					</div>
+				</div>
+				<div class="facts__item">
+					<div class="facts__item-line"></div>
+					<div class="facts__item-content">
+						<p class="facts__item-content-nubmer">6,000</p>
+						<p class="facts__item-content-text">Успешных поездок</p>
+					</div>
+				</div>
+				<div class="facts__item">
+					<div class="facts__item-line"></div>
+					<div class="facts__item-content">
+						<p class="facts__item-content-nubmer">15</p>
+						<p class="facts__item-content-text">лет в сфере перевозок</p>
+					</div>
+				</div>
+				<div class="facts__item">
+					<div class="facts__item-line"></div>
+					<div class="facts__item-content">
+						<p class="facts__item-content-nubmer">3</p>
+						<p class="facts__item-content-text">Комфортабельные машины</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<script src="./scripts/header.js"></script>
 </body>
 </html>

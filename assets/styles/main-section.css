@@ -1,0 +1,36 @@
+.main
+{
+  margin-bottom: 200px;
+}
+
+.main__title-wr
+{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main__title-top
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__title
+{
+  margin: 0;
+  color: #463B38;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.main__img
+{
+  width: 100%;
+}
+
+.main__title-bottom { margin-left: 40.5%; }
+
+.main__img { margin-bottom: 20px; }

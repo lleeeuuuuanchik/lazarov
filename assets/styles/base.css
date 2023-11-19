@@ -1,0 +1,49 @@
+.container
+{
+  padding: 0 20px;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+body { background: #F6F1DE; }
+
+a
+{
+  text-decoration: none;
+  color: #1E1E1E;
+  font-weight: 700;
+}
+
+h1
+{
+  font-size: 1px;
+  color: transparent;
+}
+
+.button
+{
+  cursor: pointer;
+  background-color: transparent;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #463B38;
+  color: #463B38;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all .2s ease;
+}
+
+.button:hover
+{
+  background-color: #463B38;
+  color: #F6F1DE;
+}
+
+.g-subtitle
+{
+  margin: 0;
+  color: #463B38;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -42,8 +42,6 @@
   gap: 20px;
 }
 
-.hide { display: none; }
-
 .header__burger.show
 {
   display: block;

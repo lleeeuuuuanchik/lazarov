@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="assets/styles/main-section.css">
 	<link rel="stylesheet" href="assets/styles/about-section.css">
 	<link rel="stylesheet" href="assets/styles/facts-section.css">
+	<link rel="stylesheet" href="assets/styles/tarifs-section.css">
 </head>
 <body>
 	<div class="container">
@@ -18,7 +19,7 @@
 			<nav class="header__nav">
 				<a href="#about" class="header__nav-link">О нас</a>
 				<a href="#facts" class="header__nav-link">Ключевые факты</a>
-				<a href="#" class="header__nav-link">Тарифы</a>
+				<a href="#tarifs" class="header__nav-link">Тарифы</a>
 				<a href="#" class="header__nav-link">Контакты</a>
 				<img
 					src="./assets/imgs/burger.svg"
@@ -38,7 +39,7 @@
 			<nav class="header__burger-nav">
 				<a href="#about" class="header__nav-link" onclick="header.togggleBurger()">О нас</a>
 				<a href="#facts" class="header__nav-link" onclick="header.togggleBurger()">Ключевые факты</a>
-				<a href="#" class="header__nav-link" onclick="header.togggleBurger()">Тарифы</a>
+				<a href="#tarifs" class="header__nav-link" onclick="header.togggleBurger()">Тарифы</a>
 				<a href="#" class="header__nav-link" onclick="header.togggleBurger()">Контакты</a>
 			</nav>
 		</div>
@@ -117,9 +118,93 @@
 				</div>
 			</div>
 		</section>
+		<section class="tarifs container" id="tarifs">
+			<h2 class="g-subtitle">Что мы предлагаем?</h2>
+			<div class="tarifs-wr">
+				<img src="./assets/imgs/tarifs-img.png" alt="tarif-img" class="tarifs-img">
+				<div class="tarifs__content">
+					<div class="tarifs__content-item">
+						<div class="tarifs__content-item-title-wr" onclick="tarifs.toggleTarif(this)">
+							<h3 class="tarifs__content-item-title">
+								Одно место в авто
+							</h3>
+							<img src="./assets/imgs/+.svg" class="tarifs__content-item-title-img" alt="plus">
+							<img src="./assets/imgs/-.svg" class="tarifs__content-item-title-img hide" alt="minus">
+						</div>
+						<div class="tarifs__content-item-info-wr">
+							<div class="tarifs__content-item-info-advantages-wr">
+								<p class="tarifs__content-item-info-advantage">1 пассажир</p>
+								<p class="tarifs__content-item-info-advantage">Кондиционер</p>
+								<p class="tarifs__content-item-info-advantage">Объемный багажник</p>
+								<p class="tarifs__content-item-info-advantage">Приятная музыка</p>
+								<p class="tarifs__content-item-info-advantage">скидка 10% с промокодом: Lazarov</p>
+							</div>
+							<div class="tarifs__content-item-info-cost-wr">
+								<p class="tarifs__content-item-info-cost-title">Стоимость</p>
+								<p class="tarifs__content-item-info-cost-price">3000 ₽</p>
+							</div>
+							<a href="https://wa.me/79627485550" target="_blank">
+								<button class="button">Заказать такси</button>
+							</a>
+						</div>
+					</div>
+					<div class="tarifs__content-item">
+						<div class="tarifs__content-item-title-wr" onclick="tarifs.toggleTarif(this)">
+							<h3 class="tarifs__content-item-title">
+								Отдельная машина
+							</h3>
+							<img src="./assets/imgs/+.svg" class="tarifs__content-item-title-img" alt="plus">
+							<img src="./assets/imgs/-.svg" class="tarifs__content-item-title-img hide" alt="minus">
+						</div>
+						<div class="tarifs__content-item-info-wr">
+							<div class="tarifs__content-item-info-advantages-wr">
+								<p class="tarifs__content-item-info-advantage">3-4 пассажира</p>
+								<p class="tarifs__content-item-info-advantage">Кондиционер</p>
+								<p class="tarifs__content-item-info-advantage">Объемный багажник</p>
+								<p class="tarifs__content-item-info-advantage">Приятная музыка</p>
+								<p class="tarifs__content-item-info-advantage">скидка 10% с промокодом: Lazarov</p>
+							</div>
+							<div class="tarifs__content-item-info-cost-wr">
+								<p class="tarifs__content-item-info-cost-title">Стоимость</p>
+								<p class="tarifs__content-item-info-cost-price">10000 ₽</p>
+							</div>
+							<a href="https://wa.me/79627485550" target="_blank">
+								<button class="button">Заказать такси</button>
+							</a>
+						</div>
+					</div>
+					<div class="tarifs__content-item">
+						<div class="tarifs__content-item-title-wr" onclick="tarifs.toggleTarif(this)">
+							<h3 class="tarifs__content-item-title">
+								Аренда минивэна
+							</h3>
+							<img src="./assets/imgs/+.svg" class="tarifs__content-item-title-img" alt="plus">
+							<img src="./assets/imgs/-.svg" class="tarifs__content-item-title-img hide" alt="minus">
+						</div>
+						<div class="tarifs__content-item-info-wr">
+							<div class="tarifs__content-item-info-advantages-wr">
+								<p class="tarifs__content-item-info-advantage">7 пассажиров</p>
+								<p class="tarifs__content-item-info-advantage">Кондиционер</p>
+								<p class="tarifs__content-item-info-advantage">Объемный багажник</p>
+								<p class="tarifs__content-item-info-advantage">Приятная музыка</p>
+								<p class="tarifs__content-item-info-advantage">скидка 10% с промокодом: Lazarov</p>
+							</div>
+							<div class="tarifs__content-item-info-cost-wr">
+								<p class="tarifs__content-item-info-cost-title">Стоимость</p>
+								<p class="tarifs__content-item-info-cost-price">15000 ₽</p>
+							</div>
+							<a href="https://wa.me/79627485550" target="_blank">
+								<button class="button">Заказать такси</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 
 	<script src="./scripts/header.js"></script>
+	<script src="./scripts/tarifs.js"></script>
 </body>
 </html>

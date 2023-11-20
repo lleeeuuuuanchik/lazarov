@@ -47,5 +47,6 @@ h1
   font-weight: 700;
   text-transform: uppercase;
 }
-
-.hide { display: none; }
+@media (max-width: 768px) {
+  .g-subtitle { font-size: 28px; }
+}

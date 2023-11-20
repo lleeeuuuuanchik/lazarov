@@ -28,6 +28,7 @@
 {
   margin-bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -43,3 +44,24 @@
 }
 
 .about__content-img { width: 100%; }
+
+@media (max-width: 1220px) {
+  .about { margin-bottom: 100px; }
+  .about__content { max-width: 100%; }
+  .about__content-img
+  {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__content-title
+  {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .about { gap: 20px }
+  .about__content-info-wr { margin-bottom: 20px; }
+  .about__content-img { height: 150px; }
+}

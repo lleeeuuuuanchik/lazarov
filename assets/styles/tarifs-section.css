@@ -13,6 +13,7 @@
 {
   grid-area: 1 / 1 / 2 / 3;
   width: 100%;
+  min-height: 304px;
 }
 
 .tarifs__content { grid-area: 1 / 3 / 2 / 6; }
@@ -44,8 +45,9 @@
 
 .tarifs__content-item-info-advantages-wr
 {
+  height: 68px;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 84px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -129,9 +131,12 @@
   .tarifs__content-item-info-cost-price { font-size: 32px; }
   .tarifs__content-item-info-advantages-wr
   {
-    height: 117px;
-    margin-bottom: 50px;
+    gap: 10px;
+    height: 90px;
+    margin-bottom: 40px;
   }
+
+  .tarifs__content-item-info-wr.active { height: 270px; }
 }
 
 @media (max-width: 768px) {
